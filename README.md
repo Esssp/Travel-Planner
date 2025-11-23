@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+Travel Planner – Custom Trip Itinerary Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Overview
+The Travel Planner is a user-driven application designed to generate a customized multi-day travel itinerary. The program creates a detailed plan based on user inputs such as destination, number of days, travel preferences, total budget, and number of travelers. It ensures that each day includes unique activities and supports destinations in any country.
 
-## Available Scripts
+- Key Features
+Generates itineraries for any destination worldwide.
+Plans the trip for the exact number of days entered by the user.
+Selects unique activities for each day, minimizing repetition.
+Supports multiple travel preferences, including:
+Adventure
+Food
+History
+Relaxation
+Exploration
+Mixed (Everything)
+Calculates estimated total cost and evaluates it against the user's budget.
+Adjusts cost based on the number of people.
+Provides basic travel guidance and tips.
 
-In the project directory, you can run:
+- How It Works
+1. The user enters:
+> Destination
+> Number of days
+> Travel preference
+> Total budget
+> Number of people
+2. The program selects activities based on the selected preference.
+3. A unique activity is assigned to each day.
+4. The total cost is calculated and compared with the budget.
+5. A day-by-day itinerary is displayed to the user.
 
-### `npm start`
+- Technology Stack
+1. Languages: Python, JavaScript (React for the user interface)
+2. Tools and Platforms: PyCharm, Git, GitHub
+3. Version Control: Git
+   
+- Sample Output
+Day 1: Museum Tour in France (Estimated Cost: ₹600)
+Day 2: Spa Retreat in France (Estimated Cost: ₹1000)
+Day 3: Cooking Class in France (Estimated Cost: ₹900)
+Day 4: Ziplining in France (Estimated Cost: ₹800)
+Day 5: Beach Day in France (Estimated Cost: ₹0)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Total Estimated Cost for 2 People: ₹3,300
+The plan fits within the provided budget.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Project Structure
+my-travel-planner/
+│
+├─ public/
+├─ src/
+├─ package.json
+├─ package-lock.json
+├─ README.md
+└─ .gitignore
 
-### `npm test`
+- Running the React Application
+1. Navigate to the project directory.
+2. Install dependencies:
+npm install
+3. Start the development server:
+npm start
+4. The application will be available at:
+http://localhost:3000
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Running the Python Script
+To run the standalone Python itinerary generator:
+python script1.py
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Future Enhancements
+1. Integration of hotel and transportation suggestions.
+2. Support for real-time data through external APIs.
+3. Ability to export the itinerary as a PDF document.
+4. Automatic currency conversion based on destination.
+   
+- License
+This project is licensed under the MIT License.
